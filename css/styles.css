@@ -21,8 +21,9 @@ a {
 body {
 	padding-top: 5vh;
 	background-image: url('../img/carro.jpg');
-	background-size: cover;
-	background-position-y: -150px;
+	background-repeat: repeat;
+	background-size: 100%;
+
 }
 
 /* form */
@@ -117,4 +118,12 @@ input:focus {
 
 .template {
 	display: none;
+}
+
+.car-box{
+	margin-top: 8vh;
+}
+h2,p{
+	text-align: center;
+	font-size: 1.6rem;
 }
