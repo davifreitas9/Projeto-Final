@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de registro de carros</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="main-container">
+      <h1>Registro de carros importados</h1>
+       <div class="full-box">
+			<a href="/cadastro">
+				<button class="button" type="submit">Novo Carro</button>
+			</a>
+	   </div>
+	   {% for carro in carros%} 
+	   <div class="car-box">
+            <h2>{{carro.nome}}</h2>
+			<p>{{carro.tipo}}</p>
+			<p>{{carro.desc}}</p>
+        </div>
+		{% endfor %}
+	<script src="js/scripts.js"></script>
+</body>
+</html>
