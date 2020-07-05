@@ -13,13 +13,6 @@
 				<button class="button" type="submit">Novo Carro</button>
 			</a>
 	   </div>
-	   {% for carro in carros%} 
-	   <div class="car-box">
-            <h2>{{carro.nome}}</h2>
-			<p>{{carro.tipo}}</p>
-			<p>{{carro.desc}}</p>
-        </div>
-		{% endfor %}
 		{% for car in cars%} 
 	   <div class="car-box">
             <h2>{{car.nome}}</h2>
@@ -27,6 +20,12 @@
 			<p>{{car.desc}}</p>
         </div>
 		{% endfor %}
-	<script src="js/scripts.js"></script>
+		{% for carro in carros%} 
+	   <div class="car-box">
+            <h2>{{carro.nome}}</h2>
+			<p>{{carro.tipo}}</p>
+			<p>{{carro.desc}}</p>
+        </div>
+		{% endfor %}
 </body>
 </html>

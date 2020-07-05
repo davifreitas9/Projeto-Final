@@ -10,5 +10,6 @@ db.serialize(function(){
             desc TEXT
         );
     `)
+
 })
 module.exports = db
