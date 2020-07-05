@@ -25,7 +25,6 @@ var fs = require("fs");
     server.get("/", function(req, res){
         db.all(`SELECT * FROM cars`, function(err,rows){
             const cars = [...rows]
-            console.log(cars)
             return res.render("index.html",{carros,cars})
         })
         
