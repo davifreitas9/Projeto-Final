@@ -20,6 +20,13 @@
 			<p>{{carro.desc}}</p>
         </div>
 		{% endfor %}
+		{% for car in cars%} 
+	   <div class="car-box">
+            <h2>{{car.nome}}</h2>
+			<p>{{car.tipo}}</p>
+			<p>{{car.desc}}</p>
+        </div>
+		{% endfor %}
 	<script src="js/scripts.js"></script>
 </body>
 </html>
